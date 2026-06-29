@@ -13,17 +13,17 @@ from PIL import Image
 import sys
 
 # コマンドライン引数から入力画像と出力画像のファイル名を取得
-input\\\_image = sys.argv\\\[1]
-output\\\_image = sys.argv\\\[2]
+input_image = sys.argv[1]
+output_image = sys.argv[2]
 
 # 画像の読み込み
-img = Image.open(imput\\\_image)
+img = Image.open(imput_image)
 
 # 画像の左右反転
-img\\\_flip = img.transpose(Image.FLIP\\\_LEFT\\\_RIGHT)
+img_flip = img.transpose(Image.FLIP_LEFT_RIGHT)
 
 # 画像の保存
-img\\\_flip.save(output\\\_image)
+img_flip.save(output_image)
 ```
 
 ## 3.使い方
